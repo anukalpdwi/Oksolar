@@ -36,14 +36,14 @@ const Header: React.FC = () => {
         }`}
       >
         <div className="container flex items-center justify-between mt-0 mb-2 md:mb-4">
-          <div className="flex items-center text-[#2bbc2d] font-bold text-2xl md:text-3xl">
-            {/* <img
-              src="/eco solar logo.png"
+          <div className="flex items-center">
+            <img
+              src="/oksolar logo.png"
               alt="Eco Solar Logo"
               className={`transition-all duration-300 ${
                 isScrolled ? 'h-24 w-32' : 'h-24 w-32'
               }`}
-            /> */}Ok Solar India
+            />
           </div>
 
           {/* Desktop Navigation */}

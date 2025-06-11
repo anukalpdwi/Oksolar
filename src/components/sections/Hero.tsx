@@ -79,7 +79,7 @@ const Hero: React.FC = () => {
         {/* Right: Large Image */}
         <div className="hidden lg:flex flex-1 justify-center items-center">
           <img
-            src="/bg21.PNG"
+            src="/bg21-removebg.png"
             alt="Ok Solar"
             className="h-[400px] w-[400px] object-contain shadow-2xl border-2 border-white rounded-lg"
           />

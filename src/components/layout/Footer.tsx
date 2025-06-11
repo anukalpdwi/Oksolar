@@ -82,16 +82,13 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex items-start">
                 <Mail className="h-5 w-5 text-primary-500 mr-2 mt-0.5" />
-                <span className="text-gray-400">ecosolarindia.inc@gmail.com </span>
+                <span className="text-gray-400">oksolar.inc@gmail.com </span>
               </li>
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 text-primary-500 mr-2 mt-0.5" />
                 <span className="text-gray-400">
-                  57 Shushila bhawan ,Priyadarshini phase 3
- 
-
-                  <br />Shree Rameshwaram Bagmugaliya
-                  <br />Bhopal, Madhya Pradesh 462043
+                  57,Shree Rameshwaram Bagmugaliya, Bhopal
+                  <br />Madhya Pradesh 462043
                 </span>
               </li>
             </ul>
@@ -103,7 +100,7 @@ const Footer: React.FC = () => {
       <div className="border-t border-gray-800">
         <div className="container py-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm mb-4 md:mb-0">
-            &copy; {new Date().getFullYear()} Eco Solar India. All rights reserved.
+            &copy; {new Date().getFullYear()} OkSolar India. All rights reserved.
           </p>
           <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-400">
             <a href="#" className="hover:text-primary-500 transition-colors">Privacy Policy</a>

@@ -172,7 +172,7 @@ const Contact: React.FC = () => {
                   <Mail className="h-6 w-6 mr-4 mt-1" />
                   <div>
                     <h4 className="font-medium mb-1">Email</h4>
-                    <p className="text-white/90">ecosolarindia.inc@gmail.com </p>
+                    <p className="text-white/90">oksolar.inc@gmail.com </p>
                     <p className="text-white/70 text-sm">We respond within 24 hours</p>
                   </div>
                 </div>
@@ -182,8 +182,7 @@ const Contact: React.FC = () => {
                   <div>
                     <h4 className="font-medium mb-1">Office</h4>
                     <p className="text-white/90">
-                     57 Shushila bhawan ,Priyadarshini phase 3
-                    <br />Shree Rameshwaram Bagmugaliya
+                     57, Shree Rameshwaram Bagmugaliya
                   <br />Bhopal, Madhya Pradesh 462043
                     </p>
                   </div>
