@@ -37,7 +37,7 @@ const Header: React.FC = () => {
       >
         <div className="container flex items-center justify-between mt-0 mb-2 md:mb-4">
           <div className="flex items-center">
-            <a href="#" aria-label="Home">
+            <a href="https://www.oksolar.in/" aria-label="Home">
               <img
                 src="/oksolar logo.png"
                 alt="Eco Solar Logo"
