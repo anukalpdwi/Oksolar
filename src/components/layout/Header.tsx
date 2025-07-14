@@ -20,12 +20,12 @@ const Header: React.FC = () => {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   
   const navLinks = [
-    { name: 'Home', href: '#' },
-    { name: 'Services', href: '#services' },
-    { name: 'Why Us', href: '#why-us' },
-    { name: 'Technical', href: '#technical' },
-    { name: 'Testimonials', href: '#testimonials' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Home', href: 'https://www.oksolar.in/' },
+    { name: 'Services', href: 'https://www.oksolar.in/#services' },
+    { name: 'Why Us', href: 'https://www.oksolar.in/#why-us' },
+    { name: 'Technical', href: 'https://www.oksolar.in/#technical' },
+    { name: 'Testimonials', href: 'https://www.oksolar.in/#testimonials' },
+    { name: 'Contact', href: 'https://www.oksolar.in/#contact' },
   ];
 
   return (
