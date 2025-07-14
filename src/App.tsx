@@ -8,22 +8,33 @@ import Testimonials from './components/sections/Testimonials';
 import Contact from './components/sections/Contact';
 import Footer from './components/layout/Footer';
 import WhatsAppButton from './components/ui/WhatsAppButton';
+import PartnerWithUs from './components/sections/PartnerWithUs';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 const App: React.FC = () => {
   return (
-    <div className="flex flex-col min-h-screen">
-      <Header />
-      <main className="flex-1">
-        <Hero />
-        <Services />
-        <WhyChooseUs />
-        <TechnicalSpecs />
-        <Testimonials />
-        <Contact />
-      </main>
-      <Footer />
-      <WhatsAppButton />
-    </div>
+    <Router>
+      <div className="flex flex-col min-h-screen">
+        <Header />
+        <main className="flex-1">
+          <Routes>
+            <Route path="/" element={
+              <>
+                <Hero />
+                <Services />
+                <WhyChooseUs />
+                <TechnicalSpecs />
+                <Testimonials />
+                <Contact />
+              </>
+            } />
+            <Route path="/partner-with-us" element={<PartnerWithUs />} />
+          </Routes>
+        </main>
+        <Footer />
+        <WhatsAppButton />
+      </div>
+    </Router>
   );
 };
 

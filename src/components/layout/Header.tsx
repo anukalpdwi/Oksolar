@@ -37,13 +37,15 @@ const Header: React.FC = () => {
       >
         <div className="container flex items-center justify-between mt-0 mb-2 md:mb-4">
           <div className="flex items-center">
-            <img
-              src="/oksolar logo.png"
-              alt="Eco Solar Logo"
-              className={`transition-all duration-300 ${
-                isScrolled ? 'h-24 w-32' : 'h-24 w-32'
-              }`}
-            />
+            <a href="#" aria-label="Home">
+              <img
+                src="/oksolar logo.png"
+                alt="Eco Solar Logo"
+                className={`transition-all duration-300 ${
+                  isScrolled ? 'h-24 w-32' : 'h-24 w-32'
+                }`}
+              />
+            </a>
           </div>
 
           {/* Desktop Navigation */}
@@ -117,14 +119,14 @@ const Header: React.FC = () => {
               ))}
               <div className="flex items-center justify-between pt-4 border-t border-gray-200">
                 <a
-                  href="tel:+919982953595"
+                  href="tel:+919993511331"
                   className="flex items-center font-medium text-secondary-500"
                 >
                   <Phone className="h-5 w-5 mr-2" />
-                  <span>+91 99829 53595</span>
+                  <span>+91 99935 11331</span>
                 </a>
                 <a
-                  href="https://wa.me/919982953595?text=Hello%2C%20I'm%20interested%20in%20solar%20installation.%20Please%20provide%20more%20information."
+                  href="https://wa.me/919993511331?text=Hello%2C%20I'm%20interested%20in%20solar%20installation.%20Please%20provide%20more%20information."
                   target="_blank"
                   rel="noopener noreferrer"
                 >

@@ -197,6 +197,12 @@ const WhyChooseUs: React.FC = () => {
           </div>
           */}
         </div>
+            {/* Partner with us button */}
+            <div className="flex justify-center mt-12">
+              <a href="/partner-with-us" className="btn btn-primary text-lg px-8 py-4 rounded-full shadow-lg hover:bg-primary-600 transition-colors">
+                Partner with us
+              </a>
+            </div>
       </div>
     </section>
   );
