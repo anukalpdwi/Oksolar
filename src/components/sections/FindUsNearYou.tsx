@@ -68,37 +68,33 @@ const FindUsNearYou: React.FC = () => {
     setIsSubmitting(true);
     setFormError(null);
 
-    // Save user data to Google Sheets
     try {
-      await fetch('https://script.google.com/macros/s/AKfycbxHOdA371PAnJIH9soU58Rb6uHTKM9jeNIqgns6uzt8hqIO6EHclTnJCIwx_Hf6EeG-hQ/exec', {
-        method: 'POST',
-        mode: 'no-cors', // Bypass CORS
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          Name: userForm.name,
-          Address: userForm.address,
-          Phone: userForm.phone,
-        }),
-      });
-
-      // Since mode is 'no-cors', response is opaque; assume success if no error
-      setRevealedContacts((prev) => ({
-        ...prev,
-        [selectedPartner?.id || '']: {
-          ...prev[selectedPartner?.id || ''],
-          [contactType!]: true,
-        },
-      }));
-      setShowContactForm(false);
-      setUserForm({ name: '', address: '', phone: '' });
-      setIsSubmitting(false);
-    } catch (err: any) {
-      console.error('Error saving to Google Sheets:', err);
+      const { error } = await supabase
+        .from('leads')
+        .insert([
+          {
+            name: userForm.name,
+            address: userForm.address,
+            phone: userForm.phone,
+          },
+        ]);
+      if (error) {
+        setFormError('Failed to submit. Please try again later.');
+      } else {
+        setRevealedContacts((prev) => ({
+          ...prev,
+          [selectedPartner?.id || '']: {
+            ...prev[selectedPartner?.id || ''],
+            [contactType!]: true,
+          },
+        }));
+        setShowContactForm(false);
+        setUserForm({ name: '', address: '', phone: '' });
+      }
+    } catch (err) {
       setFormError('Failed to submit. Please try again later.');
-      setIsSubmitting(false);
     }
+    setIsSubmitting(false);
   };
 
   return (

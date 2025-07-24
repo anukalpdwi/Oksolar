@@ -292,6 +292,22 @@ const PartnerWithUs: React.FC = () => {
 
     setSubmitted(true);
     setIsLoading(false);
+
+    const whatsappNumber = '919982953595';
+    const whatsappMessage = `New Partner Inquiry:
+Name: ${form.name}
+Company: ${form.company}
+Email: ${form.email}
+Phone: ${form.phone}
+WhatsApp: ${form.whatsapp}
+GSTN: ${form.gstn}
+Address: ${form.address}, ${form.city}, ${form.district}, ${form.state} - ${form.pincode}
+Message: ${form.message}`;
+
+    window.open(
+      `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`,
+      '_blank'
+    );
   };
 
   return (
