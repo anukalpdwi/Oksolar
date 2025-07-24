@@ -295,7 +295,7 @@ const PartnerWithUs: React.FC = () => {
   };
 
   return (
-    <section className="min-h-screen bg-gradient-to-b from-gray-50 to-white py-12 md:py-24">
+    <section className="min-h-screen bg-gradient-to-b from-gray-50 to-white py-12 md:py-24 mt-28 md:mt-0">
       <div className="container mx-auto px-4 max-w-3xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

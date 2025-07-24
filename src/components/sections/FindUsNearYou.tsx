@@ -102,7 +102,7 @@ const FindUsNearYou: React.FC = () => {
   };
 
   return (
-    <section className="min-h-screen bg-gray-50 py-12 md:py-24">
+    <section className="min-h-screen bg-gray-50 py-12 md:py-24 mt-28 md:mt-0">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-gray-800 text-center mb-12">Find Us Near You</h2>
         <div className="flex flex-col md:flex-row gap-4 mb-12 justify-center">

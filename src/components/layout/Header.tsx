@@ -40,7 +40,7 @@ const Header: React.FC = () => {
           <div className="flex items-center">
             <a href="https://www.oksolar.in/" aria-label="Home">
               <img
-                src="/oksolar logo.png"
+                src="/newlogo2-removebg-preview.png"
                 alt="Eco Solar Logo"
                 className={`transition-all duration-300 ${
                   isScrolled ? 'h-24 w-32' : 'h-24 w-32'
