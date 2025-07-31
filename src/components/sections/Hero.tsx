@@ -44,7 +44,7 @@ const Hero: React.FC = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              Solar ROI Calculator
+              Find a Solar expert near you
             </motion.a>
           </div>
           
