@@ -39,7 +39,7 @@ const Hero: React.FC = () => {
             </motion.a>
             
             <motion.a
-              href="#technical"
+              href="/find-us-near-you"
               className="btn btn-outline border-white text-white hover:bg-white/10"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
