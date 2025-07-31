@@ -377,13 +377,12 @@ Message: ${form.message}`;
                 </div>
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                    Email*
+                    Email
                   </label>
                   <input
                     type="email"
                     id="email"
                     name="email"
-                    required
                     value={form.email}
                     onChange={handleChange}
                     className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
@@ -424,13 +423,12 @@ Message: ${form.message}`;
               </div>
               <div>
                 <label htmlFor="gstn" className="block text-sm font-medium text-gray-700 mb-2">
-                  GSTN*
+                  GSTN
                 </label>
                 <input
                   type="text"
                   id="gstn"
                   name="gstn"
-                  required
                   value={form.gstn}
                   onChange={handleChange}
                   className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
