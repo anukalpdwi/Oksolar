@@ -293,7 +293,7 @@ const PartnerWithUs: React.FC = () => {
     setSubmitted(true);
     setIsLoading(false);
 
-    const whatsappNumber = '919982953595';
+    const whatsappNumber = '919993511331';
     const whatsappMessage = `New Partner Inquiry:
 Name: ${form.name}
 Company: ${form.company}

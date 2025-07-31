@@ -94,6 +94,16 @@ const Services: React.FC = () => {
             />
           ))}
         </div>
+
+        {/* Place this button below your services list or grid, wherever you want it to appear in the Our Services section: */}
+        <div className="flex justify-center mt-8">
+          <a
+            href="/find-us-near-you"
+            className="btn btn-primary text-lg px-8 py-4 rounded-full shadow-lg hover:bg-primary-600 transition-colors"
+          >
+            Find Us Near You
+          </a>
+        </div>
       </div>
     </section>
   );

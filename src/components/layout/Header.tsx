@@ -26,6 +26,7 @@ const Header: React.FC = () => {
     { name: 'Technical', href: 'https://www.oksolar.in/#technical' },
     { name: 'Testimonials', href: 'https://www.oksolar.in/#testimonials' },
     { name: 'Contact', href: 'https://www.oksolar.in/#contact' },
+    { name: 'Partner with Us', href: '/partner-with-us' }, // <-- Add this line
     { name: 'Find Us Near You', href: '/find-us-near-you' },
   ];
 
