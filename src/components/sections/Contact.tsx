@@ -182,8 +182,8 @@ const Contact: React.FC = () => {
                   <div>
                     <h4 className="font-medium mb-1">Office</h4>
                     <p className="text-white/90">
-                     57, Shree Rameshwaram Bagmugaliya
-                  <br />Bhopal, Madhya Pradesh 462043
+                     37-A, Bhagat watika , Raj bhawan road, Civil lines, 
+                  <br />Jaipur, India 302006
                     </p>
                   </div>
                 </div>

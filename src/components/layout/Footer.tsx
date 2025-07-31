@@ -87,8 +87,8 @@ const Footer: React.FC = () => {
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 text-primary-500 mr-2 mt-0.5" />
                 <span className="text-gray-400">
-                  57,Shree Rameshwaram Bagmugaliya, Bhopal
-                  <br />Madhya Pradesh 462043
+                  37-A, Bhagat watika , Raj bhawan
+                  road, Civil lines, <br/> Jaipur, India 302006
                 </span>
               </li>
             </ul>
