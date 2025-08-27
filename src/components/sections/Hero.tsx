@@ -74,14 +74,14 @@ const Hero: React.FC = () => {
               <span className="text-white text-sm">Trusted Brands</span>
             </div>
           </div>
-          <div className="mt-6 flex">
+          {/* <div className="mt-6 flex">
             <a
               href="/partner-with-us"
               className="bg-white text-primary-600 border border-primary-600 text-lg px-8 py-4 rounded-full shadow-lg hover:bg-primary-50 transition-colors font-semibold"
             >
               Partner with Us
             </a>
-          </div>
+          </div> */}
         </motion.div>
 
         {/* Right: Large Image */}
