@@ -192,7 +192,7 @@ const Contact: React.FC = () => {
               <div className="mt-10">
                 <h4 className="font-medium mb-4">Our Service Areas</h4>
                 <div className="flex flex-wrap gap-2">
-                  {['Pan India', 'Madhya Pradesh', 'Uttar Pradesh', 'Maharastra', 'Chattisgarh', 'Gujrat', 'Goa'].map((city) => (
+                  {['PAN India', 'Madhya Pradesh', 'Uttar Pradesh', 'Maharastra', 'Chattisgarh', 'Gujrat', 'Goa'].map((city) => (
                     <span key={city} className="bg-white/10 px-3 py-1 rounded-full text-sm">
                       {city}
                     </span>
