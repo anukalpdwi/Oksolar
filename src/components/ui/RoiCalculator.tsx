@@ -15,9 +15,16 @@ const RoiCalculator: React.FC<RoiCalculatorProps> = () => {
     carbonOffset: 0,
   });
 
+  // Update system size based on electricity bill
+  const handleElectricityBillChange = (value: number) => {
+    setElectricityBill(value);
+    // Map Rs.1000 -> 1 kW, Rs.2000 -> 2 kW, etc.
+    const newSystemSize = Math.max(1, Math.round(value / 1000));
+    setSystemSize(newSystemSize);
+  };
+
   // Calculate ROI based on inputs
   useEffect(() => {
-    // These are approximate calculations
     const avgCostPerKw = 60000; // Average cost per kW in INR
     const totalCost = systemSize * avgCostPerKw;
     const monthlySavings = electricityBill * 0.9; // Assuming 90% savings
@@ -56,7 +63,7 @@ const RoiCalculator: React.FC<RoiCalculatorProps> = () => {
           max="20000"
           step="500"
           value={electricityBill}
-          onChange={(e) => setElectricityBill(parseInt(e.target.value))}
+          onChange={(e) => handleElectricityBillChange(parseInt(e.target.value))}
           className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer"
         />
         <div className="flex justify-between mt-2">
@@ -73,7 +80,7 @@ const RoiCalculator: React.FC<RoiCalculatorProps> = () => {
         <input
           type="range"
           min="1"
-          max="10"
+          max="20"
           step="1"
           value={systemSize}
           onChange={(e) => setSystemSize(parseInt(e.target.value))}
@@ -82,7 +89,7 @@ const RoiCalculator: React.FC<RoiCalculatorProps> = () => {
         <div className="flex justify-between mt-2">
           <span className="text-sm text-gray-500">1 kW</span>
           <span className="text-sm font-medium text-gray-800">{systemSize} kW</span>
-          <span className="text-sm text-gray-500">10 kW</span>
+          <span className="text-sm text-gray-500">20 kW</span>
         </div>
       </div>
       

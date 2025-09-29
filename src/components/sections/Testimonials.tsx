@@ -18,7 +18,7 @@ const testimonials: TestimonialProps[] = [
     name: "Rajesh Sharma",
     role: "Homeowner",
     location: "Jaipur",
-    image: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    image: "/mukesh.jpg",
     content: "Ok Solar India helped me reduce my electricity bill by 90%. The installation was professional and completed within the promised timeframe. Their team was very knowledgeable and helped me understand the entire process.",
     rating: 5
   },
@@ -27,7 +27,7 @@ const testimonials: TestimonialProps[] = [
     role: "Business Owner",
     company: "Patel Textiles",
     location: "Bhopal",
-    image: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    image: "test4.jpg",
     content: "We installed a 25kW system for our textile factory and the results have been remarkable. Our production costs have decreased significantly, and the ROI is already exceeding our expectations. Highly recommended!",
     rating: 5
   },
@@ -35,7 +35,7 @@ const testimonials: TestimonialProps[] = [
     name: "Sunil Reddy",
     role: "IT Professional",
     location: "Indore",
-    image: "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    image: "75838.jpg",
     content: "The entire process from consultation to installation was smooth and transparent. The team was professional and the system has been working flawlessly for over a year now. Great service and support!",
     rating: 4
   },
@@ -44,7 +44,7 @@ const testimonials: TestimonialProps[] = [
     role: "School Principal",
     company: "Green Valley School",
     location: "Ahemdabad",
-    image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    image: "test3.jpg",
     content: "Our school installed solar panels as part of our sustainability initiative. The team at Ok Solar made the process educational for our students and the system has been providing clean energy reliably. We're now saving on electricity while teaching our students about renewable energy.",
     rating: 5
   }
