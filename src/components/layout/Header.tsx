@@ -22,12 +22,11 @@ const Header: React.FC = () => {
   const navLinks = [
     { name: 'Home', href: 'https://www.oksolar.in/' },
     { name: 'Services', href: 'https://www.oksolar.in/#services' },
-    { name: 'Why Us', href: 'https://www.oksolar.in/#why-us' },
     { name: 'Technical', href: 'https://www.oksolar.in/#technical' },
     { name: 'Testimonials', href: 'https://www.oksolar.in/#testimonials' },
     { name: 'Contact', href: 'https://www.oksolar.in/#contact' },
-    { name: 'Partner with Us', href: '/partner-with-us' }, // <-- Add this line
-    { name: 'Find Us Near You', href: '/find-us-near-you' },
+    { name: 'Our Projects', href: '/our-projects' },
+    { name: 'Partner with Us', href: '/partner-with-us' },
   ];
 
   return (

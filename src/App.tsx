@@ -10,6 +10,8 @@ import Footer from './components/layout/Footer';
 import WhatsAppButton from './components/ui/WhatsAppButton';
 import PartnerWithUs from './components/sections/PartnerWithUs';
 import FindUsNearYou from './components/sections/FindUsNearYou';
+import OurProjects from './components/sections/OurProjects';
+import ProjectsSection from './components/sections/ProjectsSection';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 const App: React.FC = () => {
@@ -23,6 +25,7 @@ const App: React.FC = () => {
               <>
                 <Hero />
                 <Services />
+                <ProjectsSection />
                 <WhyChooseUs />
                 <TechnicalSpecs />
                 <Testimonials />
@@ -31,6 +34,7 @@ const App: React.FC = () => {
             } />
             <Route path="/partner-with-us" element={<PartnerWithUs />} />
             <Route path="/find-us-near-you" element={<FindUsNearYou />} />
+            <Route path="/our-projects" element={<OurProjects />} />
           </Routes>
         </main>
         <Footer />
