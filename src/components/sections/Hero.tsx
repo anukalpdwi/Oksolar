@@ -73,6 +73,14 @@ const Hero: React.FC = () => {
               />
               <span className="text-white text-sm">Trusted Brands</span>
             </div>
+            <div className="flex items-center">
+               <img 
+                src="/iso-9001-logo.png" 
+                alt="ISO 9001:2015" 
+                className="h-12 w-12 object-contain mr-2 bg-white rounded-full p-1"
+              />
+              <span className="text-white text-sm">ISO 9001:2015 Certified</span>
+            </div>
           </div>
           {/* <div className="mt-6 flex">
             <a

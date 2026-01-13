@@ -152,50 +152,35 @@ const WhyChooseUs: React.FC = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-          <div>
-            {/* 
-            <h3 className="text-2xl font-bold mb-6">Your Local Solar Energy Expert</h3>
-            <div className="space-y-6">
-              {features.map((feature, index) => (
-                <FeatureItem
-                  key={index}
-                  title={feature.title}
-                  description={feature.description}
-                  index={index}
-                />
-              ))}
-            </div>
-            */}
-          </div>
-
-          {/* 
-          <div className="relative">
-            <img
-              src="https://images.pexels.com/photos/9875441/pexels-photo-9875441.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-              alt="Solar installation in India"
-              className="rounded-lg shadow-lg w-full h-auto object-cover"
-            />
-            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6 rounded-b-lg">
-              <div className="flex space-x-4">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Bureau_of_Indian_Standards_Logo.svg/1200px-Bureau_of_Indian_Standards_Logo.svg.png"
-                  alt="BIS Certified"
-                  className="h-12 w-12 object-contain bg-white rounded-full p-1"
-                />
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/National_Accreditation_Board_for_Testing_and_Calibration_Laboratories_logo.png/220px-National_Accreditation_Board_for_Testing_and_Calibration_Laboratories_logo.png"
-                  alt="NABL Accredited"
-                  className="h-12 w-12 object-contain bg-white rounded-full p-1"
-                />
-                <img
-                  src="https://www.mnre.gov.in/img/logo.png"
-                  alt="MNRE Approved"
-                  className="h-12 w-12 object-contain bg-white rounded-full p-1"
-                />
+            <div>
+              <h3 className="text-2xl font-bold mb-6">Your Local Solar Energy Expert</h3>
+              <div className="space-y-6">
+                {features.map((feature, index) => (
+                  <FeatureItem
+                    key={index}
+                    title={feature.title}
+                    description={feature.description}
+                    index={index}
+                  />
+                ))}
               </div>
             </div>
-          </div>
-          */}
+
+            <div className="relative flex justify-center items-center">
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: 20 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                className="relative group"
+              >
+                <div className="absolute -inset-1 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+                <img
+                  src="/iso-certificate-flyer.png"
+                  alt="Ok Solar ISO 9001:2015 Certified Company"
+                  className="relative rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform group-hover:-translate-y-1 w-full max-w-md mx-auto"
+                />
+              </motion.div>
+            </div>
         </div>
             {/* Partner with us button */}
             <div className="flex justify-center mt-12">

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Sun, Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -18,6 +18,11 @@ const Footer: React.FC = () => {
             <p className="text-gray-400 mb-4">
               Providing sustainable solar solutions for homes and businesses in Madhya Pradesh.
             </p>
+            <div className="mb-4 text-sm">
+              <p className="font-semibold text-gray-200">OK FUTURE TECH SOLUTIONS PRIVATE LIMITED</p>
+              <p className="text-gray-500">GSTIN: 23AAFCO0018A1ZD</p>
+              <p className="text-primary-400 text-xs font-medium mt-1">ISO 9001:2015 Certified Company</p>
+            </div>
             <div className="flex space-x-4">
               <a href="https://www.facebook.com/Oksolarinc" className="text-gray-400 hover:text-primary-500 transition-colors">
                 <Facebook size={20} />
