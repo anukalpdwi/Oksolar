@@ -172,7 +172,7 @@ const Contact: React.FC = () => {
                   <Mail className="h-6 w-6 mr-4 mt-1" />
                   <div>
                     <h4 className="font-medium mb-1">Email</h4>
-                    <p className="text-white/90">oksolar.inc@gmail.com </p>
+                    <p className="text-white/90">care@oksolar.in</p>
                     <p className="text-white/70 text-sm">We respond within 24 hours</p>
                   </div>
                 </div>
@@ -180,10 +180,16 @@ const Contact: React.FC = () => {
                 <div className="flex items-start">
                   <MapPin className="h-6 w-6 mr-4 mt-1" />
                   <div>
-                    <h4 className="font-medium mb-1">Office</h4>
+                    <h4 className="font-medium mb-1">Head Office</h4>
+                    <p className="text-white/90 mb-4">
+                     37-A, Bhagat Watika, Raj Bhawan Road, Civil Lines, 
+                  <br />Jaipur, India 302006
+                    </p>
+
+                    <h4 className="font-medium mb-1">Corporate Office</h4>
                     <p className="text-white/90">
-                     37-A, Bhagat watika , Raj bhawan road, Civil lines, 
-                  <br />Jaipur, India 302006
+                     57, Harvash Vihar, Danish Nagar, Bagmugalia,
+                  <br />Bhopal, MP 462043
                     </p>
                   </div>
                 </div>

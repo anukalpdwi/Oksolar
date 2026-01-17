@@ -33,7 +33,7 @@ const projects = [
     title: "PM KUSUM Yojana",
     location: "Dausa, Rajasthan",
     capacity: "2.0 MW",
-    image: "/projects/project-4.jpg",
+    image: "/projects/project-4n.jpeg",
     type: "Ground-Mounted"
   },
   {

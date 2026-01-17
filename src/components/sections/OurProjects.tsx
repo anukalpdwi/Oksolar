@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+  import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MapPin, Zap, X, Phone, Mail, Clock } from 'lucide-react';
 
@@ -36,7 +36,7 @@ const projects = [
     location: "Dausa, Rajasthan",
     capacity: "2.0 MW",
     description: "Under PM Kusum-A ground mounted solar plant.",
-    image: "/projects/project-4.jpg",
+    image: "/projects/project-4n.jpeg",
     type: "Ground-Mounted"
   },
   {
@@ -159,7 +159,7 @@ const OurProjects: React.FC = () => {
                      <Mail className="w-6 h-6 mr-4 text-yellow-400 mt-1" />
                      <div>
                        <p className="font-semibold text-lg">Email Us</p>
-                       <p className="text-blue-100">oksolar.inc@gmail.com</p>
+                       <p className="text-blue-100">care@oksolar.in</p>
                      </div>
                    </div>
                    <div className="flex items-start">

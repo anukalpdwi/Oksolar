@@ -87,14 +87,17 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex items-start">
                 <Mail className="h-5 w-5 text-primary-500 mr-2 mt-0.5" />
-                <span className="text-gray-400">oksolar.inc@gmail.com </span>
+                <span className="text-gray-400">care@oksolar.in</span>
               </li>
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 text-primary-500 mr-2 mt-0.5" />
-                <span className="text-gray-400">
-                  37-A, Bhagat watika , Raj bhawan
-                  road, Civil lines, <br/> Jaipur, India 302006
-                </span>
+                <div className="text-gray-400">
+                  <p className="font-semibold text-white/90 text-sm">Head Office:</p>
+                  <p className="mb-2">37-A, Bhagat Watika, Raj Bhawan Road, Civil Lines,<br/> Jaipur, India 302006</p>
+                  
+                  <p className="font-semibold text-white/90 text-sm">Corporate Office:</p>
+                  <p>57, Harvash Vihar, Danish Nagar, Bagmugalia,<br/> Bhopal, MP 462043</p>
+                </div>
               </li>
             </ul>
           </div>
